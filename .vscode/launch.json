@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "dart",
+            "request": "launch",
+            "name": "Launch Dart Tests",
+            "program": "test/"
+        },
+        {
+            "name": "flutter_application_1 (Flutter Chrome)",
+            //program": "lib/main.dart",
+            "deviceId": "chrome",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
