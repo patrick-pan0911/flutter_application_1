@@ -1,5 +1,65 @@
+//task2
+/*
 import 'package:flutter/material.dart';
+import 'widgets/login_form.dart';
 
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Padding(
+          padding: EdgeInsets.all(24),
+          child: Center(
+            child: LoginForm(),
+          ),
+        ),
+      ),
+    );
+  }
+}
+*/
+
+//task 1
+
+import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widgets/counter_widget.dart';
+import 'pages/counter_page.dart';
+
+void main() {
+
+  runApp(const MyApp());
+
+}
+
+class MyApp extends StatelessWidget {
+
+  const MyApp({super.key});
+
+  @override
+
+  Widget build(BuildContext context) {
+
+    return MaterialApp(
+
+      home: CounterPage()
+
+    );
+
+  }
+
+}
+
+
+
+
+/*
 void main() {
   runApp(const MyApp());
 }
@@ -119,4 +179,5 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
+*/
 
