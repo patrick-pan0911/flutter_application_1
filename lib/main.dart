@@ -1,5 +1,5 @@
 //task2
-/*
+
 import 'package:flutter/material.dart';
 import 'widgets/login_form.dart';
 
@@ -24,10 +24,10 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-*/
+
 
 //task 1
-
+/*
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/widgets/counter_widget.dart';
 import 'pages/counter_page.dart';
@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
   }
 
 }
-
+*/
 
 
 
