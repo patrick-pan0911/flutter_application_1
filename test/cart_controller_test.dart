@@ -7,12 +7,14 @@ import 'package:flutter_application_1/models/product.dart';
 void main() {
   late CartController controller;
 
+  //initialize controller before each test and clean up after
   setUp(() {
     controller = CartController();
 
     controller.onInit();
   });
 
+  //clean up after each test (automatically deletes after each test)
   tearDown(() {
     Get.deleteAll();
   });
