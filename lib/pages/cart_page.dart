@@ -16,6 +16,16 @@ class CartPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Cart'),
+
+        actions: [
+          IconButton(
+            onPressed: () {
+              cart.clearCart();
+            },
+
+            icon: const Icon(Icons.delete),
+          ),
+        ],
       ),
 
       body: Obx(
