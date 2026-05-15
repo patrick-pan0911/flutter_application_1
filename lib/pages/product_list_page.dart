@@ -23,7 +23,12 @@ class ProductListPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Products'),
+        // Use Obx to listen to changes in the cart item count and update the title accordingly
+        title: Obx(
+          () => Text(
+            'Cart (${cart.itemCount.value})',
+          ),
+        ),
       ),
 
       body: ListView.builder(
