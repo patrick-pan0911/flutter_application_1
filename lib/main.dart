@@ -2,10 +2,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'controllers/cart_controller.dart';
 import 'pages/cart_page.dart';
 import 'pages/product_list_page.dart';
 
 void main() {
+  Get.put(CartController()); //initialize CartController and make it available for dependency injection
   runApp(const MyApp());
 }
 
@@ -13,11 +15,11 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { //build will return the widget tree that represents the UI of the app
     return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false, //remove debug banner
 
-      initialRoute: '/products',
+      initialRoute: '/products', //set initial route to product list page
 
       getPages: [
         GetPage(
